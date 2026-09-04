@@ -56,7 +56,7 @@ setInterval(rotateLearningItem, 2800);
 
 if (copyEmailButton) {
   copyEmailButton.addEventListener("click", async () => {
-    const email = "you@example.com";
+    const email = "bhavishyagaur6@gmail.com";
 
     try {
       await navigator.clipboard.writeText(email);
