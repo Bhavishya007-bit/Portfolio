@@ -1,49 +1,34 @@
-# Bhavishya Gaur — Spatial Portfolio
+# Hi, I'm Bhavishya Gaur 👋
 
-Complete HTML, CSS, and JavaScript for the latest published portfolio, including the motion fix.
+### Programmer · Data Science Learner · Curious Builder
 
-## Start
+I'm based in **Delhi, India**, and enjoy learning through code, experiments, and practical projects. My interests lie in understanding data, exploring machine learning, and turning ideas into useful applications.
 
-Extract the ZIP and open `index.html` in a browser. For a local server, open PowerShell in the extracted folder and run:
+I'm pursuing an **Integrated M.Sc. at NIT Rourkela** and have completed the **Foundation Level of IIT Madras' online BS in Data Science and Applications**.
 
-```powershell
-py -m http.server 8000
-```
+## What I'm Learning
 
-Visit http://localhost:8000. No npm dependencies or build step are required.
+- **Data Science:** Data cleaning, exploratory analysis, and visualisation.
+- **Machine Learning:** Regression, classification, feature engineering, and model evaluation.
+- **Deep Learning & Computer Vision:** Neural networks, image processing, and camera-based applications.
+- **Backend Development:** Python APIs, request validation, and databases.
+- **Local AI Applications:** Document retrieval, embeddings, and models running through Ollama.
+- **Core Foundations:** Data structures, algorithms, and linear algebra.
 
-## Files
+## What I'm Building
 
-- index.html: page content and structure.
-- styles.css: spatial layout, cyan/mint theme, responsive design, fonts, and animations.
-- script.js: project explorer, command palette, portfolio terminal, clipboard, and animation controls.
-- assets/favicon.svg: browser icon.
+My projects include **Aura**, a local AI study tutor, alongside Netflix data analysis, computer vision experiments, machine learning notebooks, and FastAPI practice.
 
-## Included updates
+I like building a small version, understanding the errors, and improving it as I learn.
 
-Delhi location; updated LinkedIn at https://www.linkedin.com/in/bhavishya-gaur; terminal-style About section; five actual project repositories; visible ring and floating-panel animations; synchronized Motion controls beside the introduction and in the bottom toolbar.
+## Let's Connect
 
-The device reduced-motion setting determines the initial animation state. Clicking Motion explicitly enables or pauses decorative animations, including when reduced motion is enabled.
+I'm open to **internships, student projects, and learning collaborations** in programming and data science.
 
-The terminal displays predefined portfolio information. It does not execute system commands or transmit input. Project panels show workflow overviews, not product screenshots. Google Fonts are optional; fallback fonts work without Internet access.
+- **LinkedIn:** [Bhavishya Gaur](https://www.linkedin.com/in/bhavishya-gaur)
+- **GitHub:** [Bhavishya007-bit](https://github.com/Bhavishya007-bit)
+- **Email:** [bhavishyagaur6@gmail.com](mailto:bhavishyagaur6@gmail.com)
 
-## Put it in your existing GitHub repository
+---
 
-Copy index.html, styles.css, script.js, and assets into your Portfolio checkout. Preview the result, then from that repository:
-
-```powershell
-git add index.html styles.css script.js assets/favicon.svg
-git diff --cached --check
-git commit -m "Add spatial portfolio and working motion controls"
-git push origin HEAD
-```
-
-If your repository has other uncommitted edits, review them separately before committing.
-
-## Vercel
-
-Use Framework Preset: Other. Leave Build Command empty. Serve the directory containing index.html as the site root. If these files are at the repository root, leave Root Directory at its default. The linked production branch will deploy when you push.
-
-## Validation
-
-JavaScript syntax, DOM interactions, stylesheet parsing, and animation/pause CSS rules under normal and reduced-motion settings were checked. Browser visual rendering still needs a desktop/mobile review.
+*Built on curiosity. Always learning.*
