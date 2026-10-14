@@ -1,449 +1,670 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#090b12" />
     <meta
       name="description"
-      content="Bhavishya Gaur's data science portfolio covering machine learning, deep learning, computer vision, FastAPI, SQL, Docker, and analytics."
+      content="Bhavishya Gaur's personal workspace: programming, data science, local AI, and the projects behind the learning. Life Sciences student at NIT Rourkela."
     />
-    <title>Bhavishya Gaur | Data Science Portfolio</title>
+    <meta
+      property="og:title"
+      content="Bhavishya Gaur — Programmer. Data scientist in the making."
+    />
+    <meta
+      property="og:description"
+      content="Explore a spatial portfolio of real projects in local AI, analytics, computer vision, and Python."
+    />
+    <meta property="og:type" content="website" />
+    <title>Bhavishya Gaur · Personal Workspace</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <header class="site-header" data-header>
-      <a class="brand" href="#top" aria-label="Go to top">
-        <span class="brand-mark">BG</span>
-        <span class="brand-text">Bhavishya Gaur</span>
-      </a>
-      <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#stack">Stack</a>
-        <a href="#learning">Learning</a>
-        <a href="#contact">Contact</a>
+    <a href="#main" class="skip-link">Skip to content</a>
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+    <div class="grid-bg" aria-hidden="true"></div>
+    <header class="topbar">
+      <a href="#home" class="brand"
+        ><span class="brand-icon" aria-hidden="true">bg<span>_</span></span
+        ><span>bhavishya<span class="brand-suffix">.workspace</span></span></a
+      >
+      <nav aria-label="Main navigation">
+        <a href="#projects">Projects</a><a href="#about">About</a
+        ><a href="#stack">Stack</a>
       </nav>
+      <div class="toolbar">
+        <span class="top-status"
+          ><i aria-hidden="true"></i> Open to opportunities</span
+        ><button class="command-launch" type="button" data-palette hidden>
+          <span aria-hidden="true">⌕</span>
+          <span class="command-label">Jump to…</span><kbd>Ctrl K</kbd>
+        </button>
+      </div>
     </header>
-
-    <main id="top">
-      <section class="hero" aria-label="Data scientist portfolio introduction">
-        <img
-          class="hero-image"
-          src="assets/data-science-workstation.png"
-          alt="Modern data science workstation with dashboards, code, and analytics visualizations"
-        />
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-          <p class="eyebrow">Data Science Enthusiast | ML & DL Learner</p>
-          <h1>Bhavishya Gaur builds data science skills into working systems.</h1>
-          <p class="hero-copy">
-            Integrated M.Sc. Life Sciences student at NIT Rourkela, exploring
-            machine learning, deep learning, computer vision, analytics, and
-            backend tools that make data products reliable.
+    <main id="main" class="workspace">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="tiny-orbit" aria-hidden="true">✳</span> PERSONAL
+            WORKSPACE / BHAVISHYA GAUR
           </p>
-          <div class="hero-actions" aria-label="Portfolio actions">
-            <a class="button button-primary" href="#projects">View Labs</a>
-            <a class="button button-secondary" href="#stack">Explore Stack</a>
+          <h1 id="hero-title">
+            Code. Explore.<br /><span class="gradient-text"
+              >Figure it out.</span
+            >
+          </h1>
+          <p class="hero-role">
+            Programmer. <span>Data scientist in the making.</span><br />Geek by
+            curiosity.
+          </p>
+          <p class="hero-description">
+            I'm Bhavishya — a Life Sciences student at NIT Rourkela who spends a
+            lot of time with Python, data, and the question:
+            <em>“Can I build this?”</em>
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="button primary"
+              ><span aria-hidden="true">↗</span> Explore my projects</a
+            ><a
+              class="button quiet"
+              href="https://github.com/Bhavishya007-bit/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span aria-hidden="true">⌘</span> GitHub<span class="sr-only">
+                (opens in a new tab)</span
+              ></a
+            >
           </div>
-          <div class="signal-strip" aria-label="Portfolio highlights">
-            <div>
-              <span class="signal-value">25+</span>
-              <span class="signal-label">tools practiced</span>
-            </div>
-            <div>
-              <span class="signal-value">2</span>
-              <span class="signal-label">academic tracks</span>
-            </div>
-            <div>
-              <span class="signal-value">5</span>
-              <span class="signal-label">learning lanes</span>
-            </div>
+          <div class="hero-meta">
+            <span><i aria-hidden="true"></i> Delhi, India</span
+            ><span>Life sciences × Data science</span>
           </div>
+          <button
+            class="hero-motion-control"
+            type="button"
+            data-motion-toggle
+            hidden
+            aria-pressed="false"
+          >
+            <span class="motion-indicator" aria-hidden="true"></span
+            ><span data-motion-label>Motion: on</span
+            ><span class="motion-hint">pause / resume</span>
+          </button>
+        </div>
+        <div
+          class="spatial-scene"
+          aria-label="A visual introduction to my interests"
+        >
+          <div class="scene-orbit orbit-one" aria-hidden="true"></div>
+          <div class="scene-orbit orbit-two" aria-hidden="true"></div>
+          <div class="orbit-label orbit-python" aria-hidden="true">
+            <span>Py</span> Python
+          </div>
+          <div class="orbit-label orbit-data" aria-hidden="true">
+            <span>∑</span> Data
+          </div>
+          <div class="scene-core" aria-hidden="true">
+            <div class="core-ring"></div>
+            <div class="core-glyph">bg<span>_</span></div>
+            <span class="core-caption">BUILT ON CURIOSITY</span>
+          </div>
+          <div class="floating-code glass">
+            <div class="window-bar">
+              <span class="window-dots" aria-hidden="true"
+                ><i></i><i></i><i></i></span
+              ><span>about_me.py</span
+              ><span class="window-symbol" aria-hidden="true">⌁</span>
+            </div>
+            <pre><code><span class="syntax-muted"># a small introduction</span>
+<span class="syntax-cyan">class</span> <span class="syntax-mint">Bhavishya</span>:
+    studying = <span class="syntax-gold">"Life Sciences"</span>
+    interests = [
+        <span class="syntax-gold">"machine learning"</span>,
+        <span class="syntax-gold">"building useful software"</span>
+    ]
+    mindset = <span class="syntax-gold">"learn by doing"</span></code></pre>
+          </div>
+          <a href="#projects" class="floating-focus glass"
+            ><span class="focus-icon" aria-hidden="true">✧</span>
+            <div>
+              <span class="mono">CURRENT PROJECT</span
+              ><strong>Aura <span aria-hidden="true">↗</span></strong
+              ><span>Local AI. Your study material.</span>
+            </div></a
+          >
         </div>
       </section>
-
-      <section class="intro-band" aria-label="Current focus">
-        <div class="section-inner intro-grid">
+      <div class="workspace-divider">
+        <span class="mono">A LOOK INSIDE MY WORKSPACE</span
+        ><span aria-hidden="true">SCROLL TO EXPLORE ↓</span>
+      </div>
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
           <div>
-            <p class="section-kicker">Current Focus</p>
-            <h2>Learning the complete journey from data to deployed insight.</h2>
+            <p class="eyebrow">01 / PROJECT EXPLORER</p>
+            <h2 id="projects-title">Things I've put into code.</h2>
           </div>
-          <div class="focus-panel">
-            <span class="console-label">now_exploring</span>
-            <p id="learning-rotator">Machine learning and deep learning fundamentals</p>
+          <p>
+            Actual repositories. Applications, experiments,<br
+              class="desktop-break"
+            />
+            and the notebooks along the way.
+          </p>
+        </div>
+        <div class="project-explorer glass">
+          <div class="explorer-bar">
+            <span class="window-dots" aria-hidden="true"
+              ><i></i><i></i><i></i></span
+            ><span class="mono">~/bhavishya/projects</span
+            ><span class="explorer-branch"
+              ><span aria-hidden="true">⑂</span> learning-by-building</span
+            >
+          </div>
+          <div class="explorer-layout">
+            <aside class="project-sidebar">
+              <p class="mono">SELECTED REPOSITORIES</p>
+              <div
+                class="project-selectors"
+                role="group"
+                aria-label="Choose a project"
+              >
+                <button
+                  type="button"
+                  class="project-selector active"
+                  data-project="aura"
+                  aria-pressed="true"
+                >
+                  <span class="repo-icon cyan" aria-hidden="true">✧</span
+                  ><span
+                    ><strong>Aura</strong
+                    ><small>Local AI application</small></span
+                  ><span class="selector-arrow" aria-hidden="true">›</span>
+                </button>
+                <button
+                  type="button"
+                  class="project-selector"
+                  data-project="netflix"
+                  aria-pressed="false"
+                >
+                  <span class="repo-icon coral" aria-hidden="true">▥</span
+                  ><span
+                    ><strong>Netflix Analysis</strong
+                    ><small>Data exploration</small></span
+                  ><span class="selector-arrow" aria-hidden="true">›</span>
+                </button>
+                <button
+                  type="button"
+                  class="project-selector"
+                  data-project="vision"
+                  aria-pressed="false"
+                >
+                  <span class="repo-icon blue" aria-hidden="true">◎</span
+                  ><span
+                    ><strong>OpenCV Projects</strong
+                    ><small>Computer vision</small></span
+                  ><span class="selector-arrow" aria-hidden="true">›</span>
+                </button>
+                <button
+                  type="button"
+                  class="project-selector"
+                  data-project="ml"
+                  aria-pressed="false"
+                >
+                  <span class="repo-icon mint" aria-hidden="true">∑</span
+                  ><span
+                    ><strong>ML Learning</strong
+                    ><small>Notebooks & fundamentals</small></span
+                  ><span class="selector-arrow" aria-hidden="true">›</span>
+                </button>
+                <button
+                  type="button"
+                  class="project-selector"
+                  data-project="api"
+                  aria-pressed="false"
+                >
+                  <span class="repo-icon gold" aria-hidden="true">⌘</span
+                  ><span
+                    ><strong>FastAPI</strong
+                    ><small>Backend practice</small></span
+                  ><span class="selector-arrow" aria-hidden="true">›</span>
+                </button>
+              </div>
+              <a
+                href="https://github.com/Bhavishya007-bit?tab=repositories"
+                class="sidebar-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >All repositories <span aria-hidden="true">↗</span
+                ><span class="sr-only"> (opens in a new tab)</span></a
+              >
+            </aside>
+            <div
+              class="project-detail"
+              id="project-detail"
+              aria-live="polite"
+              aria-atomic="true"
+            >
+              <div class="project-overline">
+                <span class="project-badge">FEATURED APPLICATION</span
+                ><span class="mono">01 / 05</span>
+              </div>
+              <h3>Aura</h3>
+              <p class="project-tagline">
+                Your material. A more grounded way to study.
+              </p>
+              <p class="project-description">
+                A local study tutor that turns uploaded material into a
+                workspace for questions, source excerpts, notes, summaries,
+                flashcards, and assessments.
+              </p>
+              <div class="architecture" aria-label="Aura workflow overview">
+                <div>
+                  <span class="architecture-icon" aria-hidden="true">▤</span
+                  ><strong>Study material</strong
+                  ><small>Documents & images</small>
+                </div>
+                <span class="architecture-arrow" aria-hidden="true">→</span>
+                <div>
+                  <span class="architecture-icon" aria-hidden="true">⌕</span
+                  ><strong>Retrieve context</strong
+                  ><small>PostgreSQL + pgvector</small>
+                </div>
+                <span class="architecture-arrow" aria-hidden="true">→</span>
+                <div>
+                  <span class="architecture-icon" aria-hidden="true">✧</span
+                  ><strong>Study & practice</strong
+                  ><small>Local models via Ollama</small>
+                </div>
+              </div>
+              <p class="architecture-caption">
+                Workflow overview · runs on your own machine
+              </p>
+              <ul class="tags" aria-label="Project technologies">
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>FastAPI</li>
+                <li>PostgreSQL</li>
+                <li>Ollama</li>
+              </ul>
+              <div class="project-bottom">
+                <a
+                  class="button primary small"
+                  href="https://github.com/Bhavishya007-bit/aura"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >View repository <span aria-hidden="true">↗</span
+                  ><span class="sr-only"> (opens in a new tab)</span></a
+                ><span class="project-note"
+                  >Source & local setup instructions</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <noscript
+          ><div class="noscript-projects">
+            <p>Explore the other projects directly:</p>
+            <a href="https://github.com/Bhavishya007-bit/Netflix---Analysis"
+              >Netflix Analysis ↗</a
+            ><a href="https://github.com/Bhavishya007-bit/openCV-Projects"
+              >OpenCV Projects ↗</a
+            ><a href="https://github.com/Bhavishya007-bit/ML-Learning"
+              >ML Learning ↗</a
+            ><a href="https://github.com/Bhavishya007-bit/FastAPI"
+              >FastAPI ↗</a
+            >
+          </div></noscript
+        >
+      </section>
+      <section
+        class="section about-grid"
+        id="about"
+        aria-labelledby="about-title"
+      >
+        <div class="about-main">
+          <p class="eyebrow">02 / THE PERSON BEHIND THE KEYBOARD</p>
+          <h2 id="about-title">
+            Curiosity starts it.<br /><span class="muted"
+              >Code makes it real.</span
+            >
+          </h2>
+          <div class="bio-terminal">
+            <div class="window-bar">
+              <span class="window-dots" aria-hidden="true"
+                ><i></i><i></i><i></i></span
+              ><span>about.md</span><span aria-hidden="true">~/bhavishya</span>
+            </div>
+            <div class="bio-content">
+              <div class="bio-prompt" aria-hidden="true">❯ cat about.md</div>
+              <p class="bio-lead">
+                I like turning “how does this work?” into something I can run,
+                test, and improve.
+              </p>
+              <p>
+                <span class="bio-comment">// what I build</span>My projects
+                range from a local AI study tutor to data analysis, computer
+                vision experiments, and Python APIs. I'm learning how the pieces
+                fit together — from a dataset to an application.
+              </p>
+              <p>
+                <span class="bio-comment">// how I learn</span>Build a small
+                version. Understand the errors. Go back to the fundamentals. My
+                notebooks and repositories document that process.
+              </p>
+              <p>
+                <span class="bio-comment">// education</span>Integrated M.Sc. at
+                NIT Rourkela. Foundation Level completed in IIT Madras' online
+                BS in Data Science and Applications.
+              </p>
+            </div>
+          </div>
+          <a
+            class="inline-link"
+            href="https://www.linkedin.com/in/bhavishya-gaur"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Connect on LinkedIn <span aria-hidden="true">↗</span
+            ><span class="sr-only"> (opens in a new tab)</span></a
+          >
+        </div>
+        <div class="profile-window glass">
+          <div class="window-bar">
+            <span class="window-dots" aria-hidden="true"
+              ><i></i><i></i><i></i></span
+            ><span>profile.json</span><span aria-hidden="true">{ }</span>
+          </div>
+          <div class="profile-content">
+            <div class="profile-avatar" aria-hidden="true">
+              BG<span class="avatar-dot"></span>
+            </div>
+            <h3>Bhavishya Gaur</h3>
+            <p class="profile-subtitle">Student · Programmer · Curious human</p>
+            <dl>
+              <div>
+                <dt>education</dt>
+                <dd>
+                  Integrated M.Sc. Life Sciences<br /><span>NIT Rourkela</span>
+                </dd>
+              </div>
+              <div>
+                <dt>foundation</dt>
+                <dd>
+                  Data Science and Applications<br /><span
+                    >IIT Madras · Foundation Level completed</span
+                  >
+                </dd>
+              </div>
+              <div>
+                <dt>location</dt>
+                <dd>Delhi, India</dd>
+              </div>
+              <div>
+                <dt>open_to</dt>
+                <dd>
+                  <span class="profile-pill">Internships</span
+                  ><span class="profile-pill">Collaborations</span>
+                </dd>
+              </div>
+            </dl>
           </div>
         </div>
       </section>
-
-      <section class="section about-section" id="about">
-        <div class="section-inner about-layout">
+      <section class="section" id="stack" aria-labelledby="stack-title">
+        <div class="section-heading">
           <div>
-            <p class="section-kicker">About</p>
-            <h2>A life sciences student building a serious data science toolkit.</h2>
-            <p class="section-copy">
-              I am Bhavishya Gaur, currently pursuing Integrated M.Sc. in Life
-              Sciences from NIT Rourkela. My main interest is data science:
-              understanding data, building machine learning workflows, and
-              learning how models can become usable software.
-            </p>
-            <p class="section-copy">
-              Alongside my degree, I completed the Foundation Level of IIT
-              Madras' online BS in Data Science and Applications. I am also
-              learning data structures and algorithms to strengthen my problem
-              solving and coding discipline.
-            </p>
+            <p class="eyebrow">03 / TOOLKIT & CURIOSITIES</p>
+            <h2 id="stack-title">The tools on my desk.</h2>
           </div>
-          <div class="profile-panel">
-            <div>
-              <span class="profile-label">Based in</span>
-              <strong>Faridabad, Haryana, India</strong>
+          <p>
+            Used across my projects and practice.<br class="desktop-break" />
+            Always adding to the toolkit.
+          </p>
+        </div>
+        <div class="stack-grid">
+          <article class="stack-card glass">
+            <div class="stack-top">
+              <span class="stack-icon mint" aria-hidden="true">▥</span
+              ><span class="mono">01</span>
             </div>
-            <div>
-              <span class="profile-label">Studying</span>
-              <strong>Integrated M.Sc. Life Sciences, NIT Rourkela</strong>
+            <h3>Data & machine learning</h3>
+            <p>
+              Exploring datasets, building baselines, and learning the maths
+              underneath.
+            </p>
+            <ul class="tags">
+              <li>Python</li>
+              <li>NumPy</li>
+              <li>Pandas</li>
+              <li>scikit-learn</li>
+              <li>Matplotlib</li>
+              <li>Seaborn</li>
+            </ul>
+          </article>
+          <article class="stack-card glass">
+            <div class="stack-top">
+              <span class="stack-icon cyan" aria-hidden="true">⌘</span
+              ><span class="mono">02</span>
             </div>
-            <div>
-              <span class="profile-label">Foundation</span>
-              <strong>IIT Madras BS in Data Science and Applications</strong>
+            <h3>Software & local AI</h3>
+            <p>
+              Turning useful logic into APIs and bringing models into
+              applications.
+            </p>
+            <ul class="tags">
+              <li>FastAPI</li>
+              <li>Pydantic</li>
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>PostgreSQL</li>
+              <li>Ollama</li>
+            </ul>
+          </article>
+          <article class="stack-card glass">
+            <div class="stack-top">
+              <span class="stack-icon blue" aria-hidden="true">◎</span
+              ><span class="mono">03</span>
             </div>
-            <div>
-              <span class="profile-label">Building toward</span>
-              <strong>Machine learning, deep learning, and backend data systems</strong>
-            </div>
-          </div>
+            <h3>Vision & fundamentals</h3>
+            <p>
+              Camera-based experiments, algorithmic thinking, and stronger
+              foundations.
+            </p>
+            <ul class="tags">
+              <li>OpenCV</li>
+              <li>Jupyter</li>
+              <li>Linear algebra</li>
+              <li>DSA practice</li>
+              <li>Git / GitHub</li>
+            </ul>
+          </article>
         </div>
       </section>
-
-      <section class="section" id="projects">
-        <div class="section-inner">
-          <div class="section-heading">
-            <div>
-              <p class="section-kicker">Portfolio Labs</p>
-              <h2>Project directions shaped around your current skill set.</h2>
-            </div>
-            <div class="filter-group" aria-label="Project filters">
-              <button class="filter-button active" type="button" data-filter="all">
-                All
-              </button>
-              <button class="filter-button" type="button" data-filter="ml">
-                ML
-              </button>
-              <button class="filter-button" type="button" data-filter="cv">
-                CV
-              </button>
-              <button class="filter-button" type="button" data-filter="backend">
-                Backend
-              </button>
-              <button class="filter-button" type="button" data-filter="analytics">
-                Analytics
-              </button>
-            </div>
-          </div>
-
-          <div class="project-grid">
-            <article class="project-card" data-category="ml analytics">
-              <div class="project-meta">
-                <span>Pandas</span>
-                <span>NumPy</span>
-                <span>scikit-learn</span>
-              </div>
-              <h3>ML Pipeline Notebook</h3>
-              <p>
-                A practice workflow for cleaning data, exploring distributions,
-                training baseline models, and communicating results with clear
-                visuals.
-              </p>
-              <dl class="project-stats">
-                <div>
-                  <dt>Focus</dt>
-                  <dd>Model building</dd>
-                </div>
-                <div>
-                  <dt>Tools</dt>
-                  <dd>SciPy, Plotly</dd>
-                </div>
-              </dl>
-            </article>
-
-            <article class="project-card" data-category="cv ml">
-              <div class="project-meta">
-                <span>OpenCV</span>
-                <span>MediaPipe</span>
-                <span>YOLO</span>
-              </div>
-              <h3>Computer Vision Experiment Lab</h3>
-              <p>
-                A learning space for image processing, landmark detection,
-                object detection, and deep learning experiments with
-                TensorFlow.
-              </p>
-              <dl class="project-stats">
-                <div>
-                  <dt>Focus</dt>
-                  <dd>Vision AI</dd>
-                </div>
-                <div>
-                  <dt>Tools</dt>
-                  <dd>TensorFlow</dd>
-                </div>
-              </dl>
-            </article>
-
-            <article class="project-card" data-category="backend ml">
-              <div class="project-meta">
-                <span>FastAPI</span>
-                <span>Pydantic</span>
-                <span>Docker</span>
-              </div>
-              <h3>Model API Service</h3>
-              <p>
-                A backend lab for serving prediction logic through typed API
-                contracts, request validation, versioned outputs, and container
-                packaging.
-              </p>
-              <dl class="project-stats">
-                <div>
-                  <dt>Focus</dt>
-                  <dd>Model serving</dd>
-                </div>
-                <div>
-                  <dt>Tools</dt>
-                  <dd>typing, JSON</dd>
-                </div>
-              </dl>
-            </article>
-
-            <article class="project-card" data-category="analytics">
-              <div class="project-meta">
-                <span>requests</span>
-                <span>BeautifulSoup</span>
-                <span>SQL</span>
-              </div>
-              <h3>Web Data Collection Pipeline</h3>
-              <p>
-                A scraper-to-dataset workflow for collecting public web data,
-                parsing useful fields, storing structured records, and preparing
-                analysis tables.
-              </p>
-              <dl class="project-stats">
-                <div>
-                  <dt>Focus</dt>
-                  <dd>Data collection</dd>
-                </div>
-                <div>
-                  <dt>Tools</dt>
-                  <dd>JSON, Pandas</dd>
-                </div>
-              </dl>
-            </article>
-
-            <article class="project-card" data-category="backend analytics">
-              <div class="project-meta">
-                <span>Redis</span>
-                <span>PostgreSQL</span>
-                <span>Grafana</span>
-              </div>
-              <h3>Backend Observability Sandbox</h3>
-              <p>
-                A systems practice lab for caching, database-backed APIs,
-                service metrics, dashboards, and Prometheus-style monitoring
-                concepts.
-              </p>
-              <dl class="project-stats">
-                <div>
-                  <dt>Focus</dt>
-                  <dd>Reliability</dd>
-                </div>
-                <div>
-                  <dt>Tools</dt>
-                  <dd>AWS basics</dd>
-                </div>
-              </dl>
-            </article>
-
-            <article class="project-card" data-category="ml backend">
-              <div class="project-meta">
-                <span>DSA</span>
-                <span>pickle</span>
-                <span>Python</span>
-              </div>
-              <h3>DSA and Serialization Tracker</h3>
-              <p>
-                A small practice project for tracking solved problems,
-                comparing approaches, and storing lightweight progress snapshots
-                with pickle and JSON.
-              </p>
-              <dl class="project-stats">
-                <div>
-                  <dt>Focus</dt>
-                  <dd>Problem solving</dd>
-                </div>
-                <div>
-                  <dt>Tools</dt>
-                  <dd>Python files</dd>
-                </div>
-              </dl>
-            </article>
+      <section
+        class="section terminal-section"
+        aria-labelledby="terminal-title"
+      >
+        <div>
+          <p class="eyebrow">04 / A LITTLE GEEK CORNER</p>
+          <h2 id="terminal-title">Meet me at the terminal.</h2>
+          <p>
+            A small portfolio shell. Try <code>help</code>,<br
+              class="desktop-break"
+            />
+            or click a command to explore.
+          </p>
+          <div class="terminal-presets">
+            <button type="button" data-command="whoami">whoami</button
+            ><button type="button" data-command="projects">projects</button
+            ><button type="button" data-command="contact">contact</button>
           </div>
         </div>
-      </section>
-
-      <section class="stack-band" id="stack">
-        <div class="section-inner">
-          <div class="section-heading">
-            <div>
-              <p class="section-kicker">Technical Stack</p>
-              <h2>Technologies you know, grouped by how they work together.</h2>
-            </div>
+        <div class="terminal-window glass">
+          <div class="window-bar">
+            <span class="window-dots" aria-hidden="true"
+              ><i></i><i></i><i></i></span
+            ><span>bhavishya@workspace: ~</span
+            ><span class="terminal-label">PORTFOLIO SHELL</span>
           </div>
-          <div class="stack-grid">
-            <div class="stack-column">
-              <h3>Data Analysis</h3>
-              <div class="skill-cloud">
-                <span>NumPy</span>
-                <span>Pandas</span>
-                <span>SciPy</span>
-                <span>Matplotlib</span>
-                <span>Seaborn</span>
-                <span>Plotly</span>
-              </div>
-            </div>
-            <div class="stack-column">
-              <h3>ML and Deep Learning</h3>
-              <div class="skill-cloud">
-                <span>scikit-learn</span>
-                <span>TensorFlow</span>
-                <span>OpenCV</span>
-                <span>MediaPipe</span>
-                <span>YOLO</span>
-              </div>
-            </div>
-            <div class="stack-column">
-              <h3>Backend and APIs</h3>
-              <div class="skill-cloud">
-                <span>FastAPI</span>
-                <span>Pydantic</span>
-                <span>typing</span>
-                <span>requests</span>
-                <span>Docker</span>
-              </div>
-            </div>
-            <div class="stack-column">
-              <h3>Data Systems</h3>
-              <div class="skill-cloud">
-                <span>SQL</span>
-                <span>PostgreSQL</span>
-                <span>Redis</span>
-                <span>Grafana</span>
-                <span>Prometheus</span>
-                <span>AWS basics</span>
-              </div>
-            </div>
-            <div class="stack-column">
-              <h3>Web and Scraping</h3>
-              <div class="skill-cloud">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>BeautifulSoup</span>
-                <span>JSON</span>
-              </div>
-            </div>
-            <div class="stack-column">
-              <h3>Python Utilities</h3>
-              <div class="skill-cloud">
-                <span>pickle</span>
-                <span>JSON</span>
-                <span>DSA</span>
-                <span>clean code practice</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="learning">
-        <div class="section-inner learning-layout">
-          <div>
-            <p class="section-kicker">Learning Roadmap</p>
-            <h2>Current growth path: ML, DL, backend systems, and DSA.</h2>
-            <p class="section-copy">
-              The aim is to keep learning practical: build notebooks, convert
-              useful logic into APIs, store data properly, observe running
-              systems, and keep strengthening fundamentals through DSA.
+          <div
+            class="terminal-output"
+            id="terminal-output"
+            role="log"
+            aria-label="Terminal output"
+            aria-live="polite"
+          >
+            <p>
+              <span class="terminal-success"
+                >Welcome to my little corner of the internet.</span
+              >
+            </p>
+            <p>
+              Type <span class="syntax-cyan">help</span> to see the available
+              commands.
+            </p>
+            <p class="terminal-muted">
+              This shell explores the portfolio. It doesn't execute system
+              commands.
             </p>
           </div>
-          <ol class="timeline">
-            <li>
-              <span class="timeline-step">01</span>
-              <div>
-                <h3>Machine learning foundations</h3>
-                <p>Practice preprocessing, model selection, evaluation, and visual explanation.</p>
-              </div>
-            </li>
-            <li>
-              <span class="timeline-step">02</span>
-              <div>
-                <h3>Deep learning and computer vision</h3>
-                <p>Explore TensorFlow, OpenCV, MediaPipe, and YOLO through visual tasks.</p>
-              </div>
-            </li>
-            <li>
-              <span class="timeline-step">03</span>
-              <div>
-                <h3>Backend data products</h3>
-                <p>Use FastAPI, Pydantic, Docker, Redis, PostgreSQL, and clean API contracts.</p>
-              </div>
-            </li>
-            <li>
-              <span class="timeline-step">04</span>
-              <div>
-                <h3>Monitoring and deployment basics</h3>
-                <p>Learn Grafana, Prometheus, AWS basics, service metrics, and reliability habits.</p>
-              </div>
-            </li>
-            <li>
-              <span class="timeline-step">05</span>
-              <div>
-                <h3>DSA and problem solving</h3>
-                <p>Build algorithmic thinking alongside practical data science projects.</p>
-              </div>
-            </li>
-          </ol>
-        </div>
-      </section>
-
-      <section class="contact-band" id="contact">
-        <div class="section-inner contact-layout">
-          <div>
-            <p class="section-kicker">Contact</p>
-            <h2>Open to data science projects, learning collaborations, and internships.</h2>
-            <p class="section-copy">
-              Based in Faridabad, Haryana, India.
-            </p>
-          </div>
-          <div class="contact-actions">
-            <a class="button button-primary" href="mailto:bhavishyagaur6@gmail.com">
-              Email Me
-            </a>
-            <a class="button button-secondary" href="https://github.com/Bhavishya007-bit/" target="_blank" rel="noreferrer">
-              GitHub
-            </a>
-            <a class="button button-secondary" href="https://www.linkedin.com/in/bhavishya-gaur-913a782a0" target="_blank" rel="noreferrer">
-              LinkedIn
-            </a>
-            <button class="button button-ghost" type="button" data-copy-email>
-              Copy Email
+          <form id="terminal-form" class="terminal-form">
+            <label for="terminal-input"
+              ><span aria-hidden="true">❯</span
+              ><span class="sr-only">Portfolio command</span></label
+            ><input
+              id="terminal-input"
+              name="command"
+              placeholder="Type a command…"
+              autocomplete="off"
+              spellcheck="false"
+              maxlength="100"
+            /><button type="submit" aria-label="Run portfolio command">
+              ↵
             </button>
-          </div>
+          </form>
         </div>
       </section>
+      <section
+        class="contact-section glass"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <div class="contact-orb" aria-hidden="true">✳</div>
+        <p class="eyebrow">
+          <span class="status-dot" aria-hidden="true"></span> OPEN TO
+          INTERNSHIPS & COLLABORATIONS
+        </p>
+        <h2 id="contact-title">
+          Interesting problem?<br /><span class="gradient-text"
+            >Let's figure it out together.</span
+          >
+        </h2>
+        <p>
+          Data science, software, or an idea worth exploring.<br />I'd love to
+          hear what you're working on.
+        </p>
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:bhavishyagaur6@gmail.com"
+            >Say hello <span aria-hidden="true">↗</span></a
+          ><a class="contact-email" href="mailto:bhavishyagaur6@gmail.com"
+            >bhavishyagaur6@gmail.com</a
+          ><button
+            class="copy-button"
+            type="button"
+            data-copy-email
+            hidden
+            aria-label="Copy email address"
+          >
+            ⧉
+          </button>
+        </div>
+        <p id="copy-status" class="copy-status" role="status"></p>
+        <div class="contact-socials">
+          <a
+            href="https://github.com/Bhavishya007-bit/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub ↗<span class="sr-only"> (opens in a new tab)</span></a
+          ><a
+            href="https://www.linkedin.com/in/bhavishya-gaur"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn ↗<span class="sr-only"> (opens in a new tab)</span></a
+          ><span>Delhi, India</span>
+        </div>
+      </section>
+      <footer>
+        <span><strong>bg_</strong> Built on curiosity. Still in progress.</span
+        ><a href="#home">Back to the workspace ↑</a>
+      </footer>
     </main>
-
-    <footer class="site-footer">
-      <span>Built for Bhavishya Gaur.</span>
-      <a href="#top">Back to top</a>
-    </footer>
-
-    <script src="script.js"></script>
+    <nav class="dock glass" aria-label="Workspace shortcuts">
+      <a href="#home" aria-label="Home"
+        ><span aria-hidden="true">⌂</span><small>Home</small></a
+      ><a href="#projects" aria-label="Projects"
+        ><span aria-hidden="true">▤</span><small>Projects</small></a
+      ><a href="#about" aria-label="About me"
+        ><span aria-hidden="true">☺</span><small>About</small></a
+      ><a href="#stack" aria-label="Toolkit"
+        ><span aria-hidden="true">⌘</span><small>Stack</small></a
+      ><span class="dock-divider" aria-hidden="true"></span
+      ><a href="#contact" aria-label="Contact"
+        ><span aria-hidden="true">↗</span><small>Contact</small></a
+      ><button
+        type="button"
+        id="motion-toggle"
+        aria-pressed="false"
+        aria-label="Pause decorative motion"
+        hidden
+      >
+        <span aria-hidden="true">◉</span><small>Motion</small>
+      </button>
+    </nav>
+    <dialog
+      class="command-dialog glass"
+      id="command-dialog"
+      aria-labelledby="command-title"
+    >
+      <div class="palette-heading">
+        <h2 id="command-title">Jump to your destination</h2>
+        <button
+          type="button"
+          id="palette-close"
+          aria-label="Close command palette"
+        >
+          Esc
+        </button>
+      </div>
+      <label class="sr-only" for="command-search"
+        >Search portfolio sections</label
+      ><input
+        type="search"
+        id="command-search"
+        placeholder="Where do you want to go?"
+        autocomplete="off"
+      />
+      <div class="palette-results" id="palette-results">
+        <a href="#home" data-search="home introduction workspace"
+          ><span>⌂</span> Home <small>Introduction</small></a
+        ><a href="#projects" data-search="projects work aura netflix opencv ml"
+          ><span>▤</span> Projects <small>Explore my repositories</small></a
+        ><a href="#about" data-search="about education profile biography"
+          ><span>☺</span> About me <small>Background & education</small></a
+        ><a href="#stack" data-search="stack tools python programming skills"
+          ><span>⌘</span> Toolkit <small>Tools & curiosities</small></a
+        ><a href="#contact" data-search="contact email linkedin github"
+          ><span>↗</span> Contact <small>Let's talk</small></a
+        >
+      </div>
+      <p id="palette-empty" hidden>
+        No matching sections. Try “projects” or “contact”.
+      </p>
+      <div class="palette-footer">
+        Search to filter · Tab to navigate · Enter to open
+      </div>
+    </dialog>
   </body>
 </html>
